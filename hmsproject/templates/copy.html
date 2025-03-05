@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+<style>
+    body{
+        background-image: url("/static/photos/back.jpg");
+    }
+    H1{
+       
+        color:Blue;
+    }
+</style>
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+
+    <div float:left;>
+        <h1>ASSUMPTION HOSPITAL</h1>
+    </div>
+    <div >
+        
+    <ul>
+        
+        <li></li>
+        <li>
+            <a href="{% url 'contact' %}">CONTACT US</a>
+        </LI> 
+            <li>
+                <a href="{% url 'doctors' %}">DOCTORS</a>
+            </li>
+            <li>
+                <a href="{% url 'booking' %}">APPOINTMENT</a>
+            </li>
+            <li>
+                <a href="{% url 'department' %}">DEPARTMENTS</a>
+            </li>
+        <li>
+            <a href="{% url 'home'%}">HOME</a>
+        </li> 
+       
+</div>

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+Department
+{% endblock %}
+
+
+{% block body %}
+<style>
+    .dep{
+        background-color:green;
+        width: 45%;
+        height: 155px;
+        border-radius: 10px;
+        color: white;
+
+    }
+    .de{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+     color: darkslategray;
+    }
+</style>
+<CENTER><h1 class="de">DEPARTMENTS</h1>
+<hr>
+
+{% for d in dept %}
+<center>
+<DIV  class="dep">    
+<h1>{{d.dep_name}}</h1>
+<p>{{d.dep_desc}}</p>
+<br>
+</center>
+</div>
+</CENTER>
+{% endfor %}
+{% endblock %}
+
+
+
+
