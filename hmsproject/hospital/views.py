@@ -148,7 +148,7 @@ def add_appointment(request):
          doctor= Doctor.objects.filter(name=d).first()
          patient= Patient.objects.filter(name=p).first()
          try:
-             Appointment.objects.create(doctor=d,patient=p,date1=d1,time=t)
+             Appointment.objects.create(doctor=doctor,patient=patient,date1=d1,time1=t)
              error = "no"
          except:   
              error = "yes"
